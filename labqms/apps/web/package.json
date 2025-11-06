@@ -1,0 +1,29 @@
+{
+  "name": "@labqms/web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@labqms/schema": "workspace:*",
+    "@labqms/ui": "workspace:*",
+    "@tanstack/react-query": "5.20.0",
+    "axios": "1.6.7",
+    "next": "14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recharts": "2.7.2",
+    "tailwindcss": "3.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.17",
+    "postcss": "8.4.35",
+    "typescript": "5.4.5"
+  }
+}
