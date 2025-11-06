@@ -1,0 +1,7 @@
+FROM node:20-alpine
+WORKDIR /app
+COPY package.json package-lock.json* .npmrc* ./
+RUN npm install -g npm@10 && npm install
+COPY . .
+RUN npm install -g @nestjs/cli && npm run build -w apps/api
+CMD ["npm", "run", "start", "-w", "apps/api"]
