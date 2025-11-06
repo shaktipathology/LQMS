@@ -1,0 +1,13 @@
+node_modules
+.dist
+.env
+.env.local
+coverage
+.DS_Store
+postgres-data
+minio-data
+redis-data
+.next
+apps/api/dist
+apps/web/.next
+playwright-report

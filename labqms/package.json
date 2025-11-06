@@ -1,0 +1,25 @@
+{
+  "name": "labqms",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/api",
+    "apps/web",
+    "packages/ui",
+    "packages/schema",
+    "packages/compliance"
+  ],
+  "scripts": {
+    "build": "npm run build -w apps/api && npm run build -w apps/web",
+    "dev": "npm run dev -w apps/api & npm run dev -w apps/web",
+    "format": "prettier --write .",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@types/node": "20.11.30",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "prettier": "3.2.5",
+    "typescript": "5.4.5"
+  }
+}
